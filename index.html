@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#285943">
+    <meta name="description" content="好好意语 A0–A1 互动练习：ESSERE — 是、很、在">
+    <title>ESSERE — 是、很、在｜好好意语</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#main-content" aria-label="好好意语练习首页">
+          <span class="brand-mark" aria-hidden="true">H</span>
+          <span>
+            <strong>好好意语</strong>
+            <small>HAOHAO ITALIANO</small>
+          </span>
+        </a>
+        <button class="restart-link" id="restart-top" type="button">Ricomincia</button>
+      </header>
+
+      <section class="exercise-card" id="main-content" aria-labelledby="exercise-title">
+        <div id="quiz-view">
+          <div class="eyebrow-row">
+            <p class="eyebrow">A0–A1 · GRAMMATICA</p>
+            <p class="progress" id="progress" aria-live="polite">1 / 10</p>
+          </div>
+
+          <div class="progress-track" aria-hidden="true">
+            <span id="progress-bar"></span>
+          </div>
+
+          <div class="title-block">
+            <p class="part-label" id="part-label">PARTE 1</p>
+            <h1 id="exercise-title">ESSERE</h1>
+            <p class="subtitle">是、很、在</p>
+          </div>
+
+          <div class="instruction-block">
+            <h2 id="instruction-it">Scegli la forma corretta.</h2>
+            <p id="instruction-zh">请选择 essere 的正确变位。</p>
+            <p class="teaching-note" id="teaching-note" hidden>
+              中文里的“很”是自然翻译，并不表示 <i>essere</i> 本身有“很”的程度含义。
+            </p>
+          </div>
+
+          <section class="question-panel" aria-labelledby="question-text">
+            <p class="question-number" id="question-number">DOMANDA 1</p>
+            <h2 class="question-text" id="question-text">Io ___ cinese.</h2>
+            <p class="meaning-prompt" id="meaning-prompt" hidden></p>
+            <div class="options" id="options" role="group" aria-labelledby="question-text"></div>
+            <div class="feedback" id="feedback" aria-live="assertive" hidden></div>
+            <button class="primary-button" id="continue-button" type="button" hidden>
+              Continua
+              <span aria-hidden="true">→</span>
+            </button>
+          </section>
+        </div>
+
+        <section class="completion" id="completion-view" aria-labelledby="completion-title" hidden>
+          <div class="celebration" aria-hidden="true">✓</div>
+          <p class="eyebrow completion-eyebrow">ESERCIZIO COMPLETATO</p>
+          <h1 id="completion-title">Complimenti! 祝贺你！</h1>
+
+          <div class="review-box">
+            <h2>你已经复习了：</h2>
+            <ul>
+              <li>ESSERE 的六个人称变位</li>
+              <li>ESSERE 表示“是”</li>
+              <li>ESSERE 在中文中可以译成“很”</li>
+              <li>ESSERE 表示“在”</li>
+            </ul>
+            <p class="completion-note">
+              提醒：“很”是自然的中文翻译，并不表示 <i>essere</i> 本身有程度含义。
+            </p>
+          </div>
+
+          <div class="conjugation-wrap">
+            <h2>ESSERE · Presente</h2>
+            <table>
+              <thead>
+                <tr><th scope="col">Persona</th><th scope="col">ESSERE</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>io</td><td>sono</td></tr>
+                <tr><td>tu</td><td>sei</td></tr>
+                <tr><td>lui / lei</td><td>è</td></tr>
+                <tr><td>noi</td><td>siamo</td></tr>
+                <tr><td>voi</td><td>siete</td></tr>
+                <tr><td>loro</td><td>sono</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <button class="primary-button restart-button" id="restart-bottom" type="button">
+            Ricomincia
+            <span aria-hidden="true">↻</span>
+          </button>
+        </section>
+      </section>
+
+      <footer>好好意语 · Italiano passo dopo passo.</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
